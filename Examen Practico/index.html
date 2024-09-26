@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Examen</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="js/tarea.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <img src="img/image.png"></img>
+        <h1>To Do List</h1>
+        <img src="img/image.png"></img>
+    </header>
+
+    <main>
+        <div id="formulario">
+            <h2>Tarea</h2>
+             <label id="id_tarea" class="hidden">ID:</label> 
+            <label for="descripcion">Descripción;</label>
+            <input type="text" name="descripcion" id="descripcion_tarea">
+            <label for="estatus">Estatus Tarea;</label>
+            <select name="estatus" id="estatus_tarea">
+                <option value="">Seleccione una Opcion</option>
+                <option value="INICIADA">Iniciada</option>
+                <option value="CONCLUIDA">Concluida</option>
+                <option value="NO CONCLUIDA">No Concluida</option>
+                <option value="REINICIADA">Reriniciada</option>
+            </select>
+            <div id="acciones">
+                <button id="button_agregar">Agregar</button>
+                <button id="button_actualizar" class="hidden">Actualizar</button>
+                <button id="button_eliminar" class="hidden">Eliminar</button>
+                <button id="button_limpiar" class="hidden">Limpiar</button>
+            </div>
+        </div>
+        <div class="tabla_title">
+            <h2>Lista de Tareas</h2> <button id="button_atras"> <- </button> <button id="button_siguiente"> -> </button>
+        </div>
+        <table >
+            <thead>
+                <tr>
+                    <th class="hidden">Numero Tarea</th>
+                    <th class="paddingColumnas">Descripcion</th>
+                    <th class="paddingColumnas">Estatus</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tabla_tareas">
+
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+
+    </footer>
+    <!-- 
+    Cuadro de Dialogo Para Mensajes de Error. 
+    <div id="modal_alert">
+        <p id="titleError">Titulo de Error</p>
+        <p id="mensajeError">Mensaje Error</p>
+    </div>
+    -->
+</body>
+
+</html>

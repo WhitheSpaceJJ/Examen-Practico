@@ -1,0 +1,66 @@
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 65px;
+    margin: 0% 10% 0%  10%;
+}
+
+
+main #formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+#acciones{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin: 25px 0px 0px 0px;
+}
+
+.hidden {
+    display: none;
+}
+.tabla_title{
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+#button_siguiente
+{
+    height: 3cqmin;
+}
+#button_atras{
+    height: 3cqmin;
+    margin: 0px 20px 0px 20px;
+}
+
+.paddingColumnas {
+    padding: 0px 10px 0px 10px;
+}
